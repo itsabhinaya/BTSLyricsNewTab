@@ -10,7 +10,6 @@
 
 html{
   height: 100%;
-
 }
 
 body {
@@ -24,12 +23,12 @@ p{
 #siteLinks p { 
   font-size:1rem;
   display: inline;
-  vertical-align: middle;
-  margin-right: 5px; 
+  vertical-align: bottom;
+  margin-right: 4px; 
 }
 
 .spotify, .youtube{
-	height: 2vh;
+  height: 2vh;
 }
 
 .center {
@@ -52,7 +51,6 @@ p{
 #songName a:link {
   text-decoration: none;
   color: #111;
-
 }
 
 #songName a:visited {
@@ -65,12 +63,96 @@ p{
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-#engLyric { 
+.engLyric { 
   background-color: rgba(0, 0, 0, 0.75);
   color: #fff; 
   display: inline;
   vertical-align: middle;
   padding: 0 .2em 0 .2em;
+}
+
+p.sun_icon, p.pen_icon, p.back_icon {
+  font-family: RobotoRegular, Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  cursor:pointer;
+  color: #9a009a;
+}
+.sun_icon{
+  float:right;
+  display:inline;
+  padding-right: 30px;
+}
+
+.pen_icon{
+  float:right;
+  display:inline;
+  padding-right: 15px;
+}
+
+.back_icon{
+  float:right;
+  display:inline;
+  padding-right: 15px;
+  padding-top: 2.5px;
+}
+
+.save_settings{
+  padding: .3em;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000000; 
+  color: #fff;
+  font-size: 15px;
+}
+
+.save_settings:hover,
+.save_settings:focus {
+  background-color: #fff; 
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    font-family: RobotoRegular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
